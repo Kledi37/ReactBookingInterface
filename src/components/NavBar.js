@@ -3,8 +3,6 @@ import {Toolbar, Typography} from '@material-ui/core'
 import {makeStyles} from "@material-ui/core/styles";
 import logo from '../logo.png'
 
-
-
 const styles = makeStyles({
     bar:{
         paddingTop: "1.15rem",

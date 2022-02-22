@@ -64,7 +64,6 @@ function App() {
 
 
   function calculatePrice(date,hours){
-   // console.log("Date",date)
   if ((date.getDay()===6) || (date.getDay()===0)){
     return 150*hours
   }
