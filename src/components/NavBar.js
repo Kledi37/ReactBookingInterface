@@ -5,14 +5,15 @@ import logo from '../logo.png'
 
 const styles = makeStyles({
     bar:{
-        paddingTop: "1.15rem",
+        paddingTop: "1.1rem",
         backgroundColor: "#fff",
         ['@media (max-width:780px)']: { 
            flexDirection: "column"
           }
     },
     logo: {
-        width: "15%", 
+        width: "10%", 
+        marginRight:"20px",
         ['@media (max-width:780px)']: { 
            display: "none"
            }

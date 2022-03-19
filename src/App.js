@@ -87,26 +87,29 @@ function App() {
         </div>
       <div className={`${classes.grid} ${classes.smallSpace}`}>          
           <grid>
-            <div>
+            <div style={{display: 'flex', justifyContent: 'center'}}>
               <p>
               <strong>PLEASE SELECT YOUR DESIRED DATE</strong>
               </p>
             </div>
+            <div style={{display: 'flex', justifyContent: 'center'}}>
             <DateTimePicker onChange={onChange} value={value} 
             minDate={currentDate}/>
-            <div>
+            </div>
+            <div style={{display: 'flex', justifyContent: 'center'}}>
               <p>
             <strong>NUMBER OF HOURS REQUIRED:</strong>
             </p>
             </div>
-            <div>
+            <div style={{display: 'flex', justifyContent: 'center'}}>
             <input type="number"  min="1" max="12" onChange={e => hourSelect(e.target.value)} ></input>
             </div>
           </grid>
           <Grid icon={<EventNoteIcon style={{fill: "#7e4dee", height:"125", width:"125"}}/>} title={calculatePrice(value,nHour)} text="Your Price Estimation In $:" btnTitle="Proceed With Booking"/>
         </div>
         </div>
-        <div className={classes.bigSpace}>
+        <div style={{display: 'flex', justifyContent: 'center',paddingTop:'50px'}}>Disclaimer this is only an inteface. Pressing buttons will take you nowhere.</div>
+        <div className={classes.littleSpace}>
           <Footer/>
         </div>
       </ThemeProvider>
