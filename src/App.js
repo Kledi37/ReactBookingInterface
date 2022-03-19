@@ -108,7 +108,7 @@ function App() {
           <Grid icon={<EventNoteIcon style={{fill: "#7e4dee", height:"125", width:"125"}}/>} title={calculatePrice(value,nHour)} text="Your Price Estimation In $:" btnTitle="Proceed With Booking"/>
         </div>
         </div>
-        <div style={{display: 'flex', justifyContent: 'center',paddingTop:'50px'}}>Disclaimer this is only an inteface. Pressing buttons will take you nowhere.</div>
+        <div style={{display: 'flex', justifyContent: 'center',paddingTop:'50px'}}>Disclaimer this is only an interface. Pressing buttons will take you nowhere.</div>
         <div className={classes.littleSpace}>
           <Footer/>
         </div>
