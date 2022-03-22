@@ -82,7 +82,10 @@ function App() {
              Booking App By Kledi Mama
           </Typography>
           <Typography variant="h5" className={classes.littleSpace} color="primary">
-          Here at BookingByKledi we strive to offer our clients the most reliable and efficient booking service available. It is without a doubt the most state of the art and easy to use service on the market. This is because we value our customers deeply and believe that our clients deserve nothing but the best.To continue, simply select the date and amount of time required for the booking.
+          Here at BookingByKledi we strive to offer our clients the most reliable and efficient booking service available. It is without a doubt the most state of the art and easy to use service on the market. This is because we value our customers deeply and believe that our clients deserve nothing but the best.
+          </Typography>
+          <Typography variant="h5" className={classes.littleSpace} color="primary">
+          To proceed, simply select the date and amount of time required for the booking.
           </Typography>
         </div>
       <div className={`${classes.grid} ${classes.smallSpace}`}>          
