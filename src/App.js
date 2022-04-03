@@ -5,17 +5,17 @@ import NavBar from './components/NavBar';
 import Grid from './components/Grid';
 import Footer from './components/Footer';
 import DateTimePicker from 'react-datetime-picker'
-
+import img from './stockImage.jpg'
 import EventNoteIcon from '@material-ui/icons/EventNote';
 
 
 const theme = createTheme({
   palette: {
     primary: {
-      main:"#2e1667",
+      main:"#ab5675",
     },
     secondary: {
-      main:"#c7d8ed",
+      main:"#73464c",
     },
   },
   typography: {
@@ -36,7 +36,7 @@ const theme = createTheme({
 
 const styles = makeStyles({
   wrapper: {
-    width: "65%",
+    width: "70%",
     margin: "auto",
     textAlign: "center"
   },
@@ -78,8 +78,11 @@ function App() {
       <NavBar></NavBar>
       <div>
       <div className={classes.wrapper}>
-          <Typography variant="h4" className={classes.bigSpace} color="primary">
+          <Typography variant="h4" className={classes.bigSpace} color="secondary">
              Booking App By Kledi Mama
+             <div style={{display: 'flex', justifyContent: 'center',paddingTop:'20px'}}>
+               <img src={img}></img>
+             </div>
           </Typography>
           <Typography variant="h5" className={classes.littleSpace} color="primary">
           Here at BookingByKledi we strive to offer our clients the most reliable and efficient booking service available. It is without a doubt the most state of the art and easy to use service on the market. This is because we value our customers deeply and believe that our clients deserve nothing but the best.
@@ -90,25 +93,26 @@ function App() {
         </div>
       <div className={`${classes.grid} ${classes.smallSpace}`}>          
           <grid>
-            <div style={{display: 'flex', justifyContent: 'center'}}>
+            <div style={{display: 'flex', justifyContent: 'center', color:'#ab5675'}}>
               <p>
               <strong>PLEASE SELECT YOUR DESIRED DATE</strong>
               </p>
             </div>
-            <div style={{display: 'flex', justifyContent: 'center'}}>
+            <div style={{display: 'flex', justifyContent: 'center', color:'#ab5675'}}>
             <DateTimePicker onChange={onChange} value={value} 
             minDate={currentDate}/>
             </div>
-            <div style={{display: 'flex', justifyContent: 'center'}}>
+            <div style={{display: 'flex', justifyContent: 'center', color:'#ab5675'}}>
               <p>
             <strong>NUMBER OF HOURS REQUIRED:</strong>
             </p>
             </div>
-            <div style={{display: 'flex', justifyContent: 'center'}}>
+            <div style={{display: 'flex', justifyContent: 'center', color:'#ab5675'}}>
             <input type="number"  min="1" max="12" onChange={e => hourSelect(e.target.value)} ></input>
             </div>
           </grid>
-          <Grid icon={<EventNoteIcon style={{fill: "#7e4dee", height:"125", width:"125"}}/>} title={calculatePrice(value,nHour)} text="Your Price Estimation In $:" btnTitle="Proceed With Booking"/>
+          <Grid icon={<EventNoteIcon style={{fill: "#c6505a", height:"125", width:"125"}}/>}
+           title={calculatePrice(value,nHour)} text="Your Price Estimation In $:" btnTitle="Proceed With Booking"/>
         </div>
         </div>
         <div style={{display: 'flex', justifyContent: 'center',paddingTop:'50px'}}>Disclaimer this is only an interface. Pressing buttons will take you nowhere.</div>
